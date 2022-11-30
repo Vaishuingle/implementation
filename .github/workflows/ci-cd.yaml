@@ -40,7 +40,7 @@ jobs:
         docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
     - name: Building Docker Image
       run: |
-        docker build . --file Dockerfile --tag vi67159/demo2
+        docker build . --file Dockerfile --tag vi67159/implementation2
     - name: Pushing docker image
       run: |
-        docker push ${{secrets.DOCKER_USERNAME}}/demo2
+        docker push ${{secrets.DOCKER_USERNAME}}/implementation2
